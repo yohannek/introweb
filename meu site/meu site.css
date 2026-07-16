@@ -1,17 +1,54 @@
 * {
-  margin: 30;
-  padding: 0;
+  margin: 50;
+  padding: 50;
   box-sizing: border-box;
+  background-color: rgb(199, 199, 199);
 }
 
-body {
-    background-color: rgb(0, 0, 0);
-    font-family: "Times New Roman", Times, serif;
-    color:rgb(255, 255, 255)
+topo {
+    display:flex;
+    gap: 600px;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+name1 {
+    font-family: Oswald, sans-serif;
+}
+
+name2 {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+name3{
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 cor1 {
-    font-family: "Arial", Helvetica, sans-serif;
-    color:brown
+    font-family: Muli, sans-serif;
+    color: rgb(209, 5, 39);
 }
 
+cor2 {
+    font-family: Copperplate, Papyrus, fantasy;
+    color: rgba(248,249,250,1);
+}
+
+#foto {
+    position:relative;
+    width: 500px;
+    top: 35px;
+    left: 90px;
+    border-radius: 50px;
+    border: 3px solid rgba(115, 3, 22);
+}
+
+name1 {
+    position:relative;
+    font-size: 130px;
+    text-align: right;
+    top: -350px;
+    left: 720px;
+}
