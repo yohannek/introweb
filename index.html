@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header class="header" id="home">
+        <h1>Minha Loja Online</h1>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section class="banner" aria-label="Destaque principal">
+            <h2>Promoçoes Imperdíveis</h2>
+            <p>Os melhores produtos com os melhores preços!</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <article class="product-card">
+                <h3>Smartphone</h3>
+                    <img
+                        src="img/iphone.jpg"
+                        alt="Imagem de um smartphone moderno"
+                        loading="lazy">
+                <p>Smartphome com alta tecnologia</p>
+            </article>
+
+            <article class="product-card">
+                <h3>Camiseta</h3>
+                    <img
+                        src="img/camisa.jpg"
+                        alt="Camiseta casual confortável"
+                        loading="lazy">
+                <p>Camiseta de algodão premium</p>  
+            </article>
+        </section>
+
+        <section id="sobre" class="about">
+
+            <section class="promo-video">
+            <h2>Conheça nossa loja</h2>
+
+            <video controls width="300">
+                <source 
+                    src="video/video.mp4"
+                    type="video/mp4">
+                    Seu navegador não suporta vídeo.
+            </video>
+        </section>
+
+        <section class="location">
+            <h2>Nossa Localização</h2>
+
+            <iframe
+                src="iframe"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/-DkbW1BZVro?si=RMKd8q5zyA3tBzmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.346199386035!2d-43.20862303377447!3d-22.91017830293191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1784291347780!5m2!1spt-BR!2sbr" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+        <h2>Sobre a Loja</h2>
+        <p>Somos uma loja dedicada a oferecer produtos de qualidade com os melhores preços.</p>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+
+            <form aria-label="Formulário de contato">
+
+                    <label for="nome">Nome:</label>
+                    <input 
+                        type="text" 
+                        id="nome"
+                        required>
+
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        required>
+                        
+                    <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Minha Loja Online</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #e3f2fd;
+    --dark-color: #222;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+
+    --spacing: 15px;
+    --radius: 8px;
+ }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.banner {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: var(--radius);
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing);
+    padding: 10px;
+}
+
+.product-card {
+    background-color: white;
+    padding: var(--spacing);
+    border-radius: var(--radius);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+.products {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (min-width: 1024px) {
+.products {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.footer {
+background-color: var(--dark-color);
+color: white;
+text-align: center;
+padding: var(--spacing);
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
